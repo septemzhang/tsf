@@ -1,0 +1,29 @@
+{
+    "name": "tsf/tsf",
+    "description": "tsf framework",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "tsf",
+            "email": "tsf@tencent.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "1.0.*",
+
+        "php": ">=5.5.0",
+        "ext-swoole": "1.7.17"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Swoole\\": "lib/"
+        },
+        "classmap": ["lib/tsf"]
+    },
+    "autoload-dev": {
+        "psr-4": {"tsf\\": "tests/"}
+    }
+}
